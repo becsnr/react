@@ -1,9 +1,9 @@
 import './App.css'
-import Aula01 from './aulas/Aula01'
+import Aula02 from './aulas/Aula02'
 
 function App() {
   return (
-    <Aula01 />
+    <Aula02 />
   )
 }
 
