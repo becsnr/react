@@ -1,0 +1,16 @@
+body {
+    background-color: #892be2b4;
+}
+
+.fraseContainer {
+    background-color: plum;
+    border: 1px solid purple;
+    width: 320px;
+    box-shadow: 1px 1px 10px rgba(128, 0, 128, 0.692);
+}
+
+.frase_content {
+    color: white;
+    background-color: pink;
+    margin: 0;
+}
