@@ -7,4 +7,4 @@ function Mensagem({tipo}) {
     )
 }
 
-export default Mensagem
+export default Mensagem;
