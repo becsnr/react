@@ -14,8 +14,9 @@ function Ex012() {
 
     return (
         <>
-            <Mensagem tipo={tipoMsg} />
-
+            <p>
+                <Mensagem tipo={tipoMsg} />
+            </p>
             <button type="button" onClick={certo}>Sucesso</button>
             <button type="button" onClick={errado}>Fracasso</button>
         </>

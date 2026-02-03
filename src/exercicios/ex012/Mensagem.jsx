@@ -5,13 +5,13 @@
 // Exibe texto diferente para cada tipo
 // No App: botão “Sucesso”, botão “Erro”, estado controla qual mensagem aparece
 
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
 function Mensagem({tipo}) {
     return (
         <>
-            {tipo === "sucesso" && <p>Deu tudo certo</p>}
-            {tipo === "erro" && <p>Algo deu errado</p>}
+            {tipo === "sucesso" && "Deu tudo certo"}
+            {tipo === "erro" && "Algo deu errado"}
         </>
     )
 }
