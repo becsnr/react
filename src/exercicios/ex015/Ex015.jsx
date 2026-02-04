@@ -5,16 +5,24 @@
 import { useState } from "react";
 import Card from "./components/Card";
 import Perfil from "./components/Perfil";
+import Botao from "./components/Botao";
 
 function Ex015() {
-    const [nome, setNome] = useState("Jungkook")
-    const [idade, setIdade] = useState(28)
+    const [mostrar, setMostrar] = useState(true)
+
+    function show() {
+        setMostrar(!mostrar)
+    }
 
     return (
         <Card>
             <h1>Perfil</h1>
 
-            <Perfil nome={nome} idade={idade} />
+            {mostrar && <Perfil nome={"Jungkook"} idade={28} />}
+
+            
+
+            <Botao texto={"Mostrar perfil / esconder"} aoClicar={show} />
         </Card>
     )
 }

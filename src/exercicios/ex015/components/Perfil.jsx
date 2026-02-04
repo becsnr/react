@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types"
 
 function Perfil({nome, idade}) {
     return (
@@ -7,6 +7,11 @@ function Perfil({nome, idade}) {
             <p>Idade: {idade}</p>
         </>
     )
+}
+
+Perfil.propTypes = {
+    nome: PropTypes.string,
+    idade: PropTypes.number
 }
 
 export default Perfil
