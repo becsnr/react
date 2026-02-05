@@ -1,18 +1,20 @@
 import { useState } from "react"
+import Perfil from "./Perfil"
 import Botao from "./Botao"
 
 function Ex016() {
-    const [mostrar, setMostrar] = useState(true)
+    const [mostrarPerfil, setMostrarPerfil] = useState(false)
 
     function show() {
-        setMostrar(!mostrar)
+        setMostrarPerfil(!mostrarPerfil)
     }
 
     return (
         <>
-            <Botao texto={"Mostrar / Esconder texto"} onClick={show} />
+            <h1>teste</h1>
+            <Botao texto={mostrarPerfil ? "Esconder perfil" : "Mostrar perfil"} onClick={show} />
 
-            {mostrar && <p>Esse texto aparece e some</p>}
+            {mostrarPerfil && <Perfil />}
         </>
     )
 }
