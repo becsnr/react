@@ -1,6 +1,6 @@
-function Botao() {
+function Botao({onClick}) {
     return (
-        <button type="submit">Enviar</button>
+        <button onClick={onClick}>Enviar</button>
     )
 }
 

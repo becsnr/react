@@ -1,19 +1,21 @@
 import { useState } from "react";
 import Card from "./components/Card";
 import Formulario from "./components/Formulario";
-import Botao from "./components/Botao";
+import Perfil from "./components/Perfil";
 
 function Ex020() {
     const [nome, setNome] = useState("")
     const [idade, setIdade] = useState("")
 
-    function receberDados(dados) {
-        return
+    function receberDados(nomeDigitado, idadeDigitado) {
+        setNome(nomeDigitado)
+        setIdade(idadeDigitado)
     }
 
     return (
         <Card>
-            <Formulario />
+            <Formulario enviarDados={receberDados} />
+            <Perfil nome={nome} idade={idade} />
         </Card>
     )
 }

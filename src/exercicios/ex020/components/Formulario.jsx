@@ -2,12 +2,11 @@ import { useState } from "react"
 import Botao from "./Botao"
 
 function Formulario({enviarDados}) {
-    const [nomeDigitado, setNomeDigitado] = useState()
-    const [idadeDigitado, setIdadeDigitado] = useState()
+    const [nomeDigitado, setNomeDigitado] = useState("")
+    const [idadeDigitado, setIdadeDigitado] = useState("")
 
     function enviar() {
-        enviarDados(nomeDigitado)
-        enviarDados(idadeDigitado)
+        enviarDados(nomeDigitado, idadeDigitado)
     }
 
     return (
