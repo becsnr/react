@@ -1,27 +1,25 @@
 import { useState } from "react";
+import Botao from "./Botoes";
 
 function Ex024() {
-    const [valor, setValor] = useState(0);
+    const [valor, setValor] = useState('');
 
-    function somar() {
-        if (valor < 10) {
-            setValor(valor + 1)
-        }
+    function feliz() {
+        setValor('😀 tô feliz 😀');
     }
 
-    function subtrair() {
-        if (valor > 0) {
-            setValor(valor - 1)
-        }
+    function triste() {
+        setValor('😢 tô triste 😢');
+    }
+
+    function raiva() {
+        setValor('😡 tô com raiva 😡');
     }
 
     return (
         <>
             <p>{valor}</p>
-
-            <button type="button" onClick={somar}>+</button>
-
-            <button type="button" onClick={subtrair}>-</button>
+            <Botao onFeliz={feliz} onTriste={triste} onRaiva={raiva} />
         </>
         
     )
