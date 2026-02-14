@@ -1,0 +1,42 @@
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.heart {
+    background-color: #ccc;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform: rotate(-45deg); /* vira */
+}
+/* metades superiores do coração  */
+.heart::before,
+.heart::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+  top: -13px;
+  left: 0;
+}
+
+.heart::after {
+  left: 13px;
+  top: 0;
+}
+
+/* Cor quando favoritado */
+.btn.active .heart,
+.btn.active .heart::before,
+.btn.active .heart::after {
+  background-color: #e74c3c; /* Cor de preenchimento (vermelho) */
+}
