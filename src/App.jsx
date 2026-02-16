@@ -1,11 +1,11 @@
 import './App.css'
 import Aula011 from './aulas/Aula011'
-import Ex031 from './exercicios/ex031/Ex031'
+import Ex032 from './exercicios/ex032/Ex032'
 
 function App() {
   return (
     //<Aula011 />
-    <Ex031 />
+    <Ex032 />
   )
 }
 
